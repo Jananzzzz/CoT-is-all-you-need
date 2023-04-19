@@ -24,6 +24,8 @@ To use this project, simply follow these steps:
 
 Or, just [download](https://www.google.com) the already-reinforced datasets.
 
+[PaperList](https://docs.qq.com/sheet/DQ0FmVURmYmFIVmtV?scene=b38db4adca404be50932e954FZWrp1&tab=BB08J2)
+
 ## Contribution
 
 - Build a dataset that includes visual reasoning with causal chains to provide valuable resources for relevant research. 
