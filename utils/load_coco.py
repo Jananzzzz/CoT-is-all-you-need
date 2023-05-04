@@ -23,7 +23,3 @@ for imgId in imgIds:
             'caption': caption['caption']
         }
         data.append(pair)
-
-
-for i in data:
-    print(i)

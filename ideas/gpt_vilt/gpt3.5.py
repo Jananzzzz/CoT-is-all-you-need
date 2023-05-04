@@ -73,32 +73,30 @@ for i in data:
         print(idx, question, answer_list[idx])
     print("")
 
-    organize_message = [
-        {
+
+    organize_message = [{
         "role": "user",
-        "content":
-        f"""
-    imagine you are a person with strong reasoning ability. 
-    Given question-answering pairs, use your reasoning ability to extract useful 
-    infomartion to get the final result.
-    Both question-answering pairs and final results are provided below:
-    ```
-    question: "{question_list[0]}" Answer: "{answer_list[0]}."
-    question: "{question_list[1]}" Answer: "{answer_list[1]}."
-    question: "{question_list[2]}" Answer: "{answer_list[2]}."
-    question: "{question_list[3]}" Answer: "{answer_list[3]}."
-    question: "{question_list[4]}" Answer: "{answer_list[4]}."
-    question: "{question_list[5]}" Answer: "{answer_list[5]}."
-    question: "{question_list[6]}" Answer: "{answer_list[6]}."
-    question: "{question_list[7]}" Answer: "{answer_list[7]}."
-    question: "{question_list[8]}" Answer: "{answer_list[8]}."
-    question: "{question_list[9]}" Answer: "{answer_list[9]}."
-    Final result: {caption}
-    ```
-    Your output  should be a list of useful infomation related to the final result.
-        """
-        }
+        "content": f"""imagine you are a person with strong reasoning ability. 
+Given question-answering pairs, use your reasoning ability to extract useful \
+infomartion to get the final result. 
+Both question-answering pairs and final results are provided below:
+'''
+"""
+    }
     ]
+
+    # add 5 questions and answers to test_message
+    for i in range(len(question_list)):
+        organize_message[0]["content"] += f"""question: '{question_list[i]}' Answer: '{answer_list[i]}.'
+"""
+
+    organize_message[0]["content"] += f"""Final result: {caption}
+'''
+Your output  should be a list of useful infomation related to the final result."""
+
+    print("")
+    print(organize_message[0]["content"])
+    print("")
 
     response = openai.ChatCompletion.create(
         model="gpt-3.5-turbo",
@@ -109,7 +107,45 @@ for i in data:
     print(response.choices[0]['message']['content'])
     print("")
 
+    refine_message0 = [
+        {
+            "role": "user",
+            "content": f"""Here is a caption: "{caption}".
+Below are some information that may help deduce the caption.
+Please identify which information is useful, ouput in a list without any other prompt or prefix.
+"""
+        }
+    ]
+
+    refine_message = [
+        {
+            "role": "user",
+            "content": f"""Here is a caption: "{caption}".
+Below are some information that related to the caption.
+Please identify which information can deduce the caption, ouput in a list without any other prompt or prefix.
+"""
+        }
+    ]
+
+    for info in response.choices[0]['message']['content'].splitlines():
+        refine_message[0]["content"] += f"""{info}
+"""
+
+    print(refine_message[0]["content"])
+
+    response = openai.ChatCompletion.create(
+        model="gpt-3.5-turbo",
+        messages=refine_message,
+        temperature=0.9,
+    )
+
+    print(response.choices[0]['message']['content'])
+
+
     end_time = time.time()
     print(f"this image-caption chain of thought reasoing costed : {end_time - start_time} seconds")
     print("")
+
+    print("first test done")
+    break
 
