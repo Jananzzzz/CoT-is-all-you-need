@@ -15,6 +15,7 @@ so i can use the questions to train and build AI models of visual question answe
 ]
 
 caption = "a baseball pitcher winds up to pitch the ball."
+picture_path = "D:/CoT-is-all-you-need/data/coco2017/train2017/000000458752.jpg"
 
 start_time = time.time()
 
@@ -36,7 +37,7 @@ print("")
 
 answer_list = []
 for idx,question in enumerate(question_list):
-    answer_list.append(visual_question_answering("D:/CoT-is-all-you-need/data/coco2017/train2017/000000458752.jpg", question))
+    answer_list.append(visual_question_answering(picture_path, question))
     print(idx, question, answer_list[idx])
 print("")
 
