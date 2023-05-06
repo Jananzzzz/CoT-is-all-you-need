@@ -82,6 +82,16 @@ def form_the_chain(information_list, history):
     response, history = model.chat(tokenizer, prompt, history=history)
     return response
 
+def align_to_list(reponse_text):
+    # align to list
+    prompt = f"""Below is a output of a langauage model:
+{reponse_text}
+The expected ouput is a list of sentences, but the actual output may not be a list. It may contain some prefixs, prompts or conclusion.
+Please align the output to a list of sentences, without any prefixs, prompts or conclusion.
+Your output is the aligned list of sentences."""
+    response, history = model.chat(tokenizer, prompt, history=[])
+    return response
+
 if __name__ == "__main__":
     
     # model
@@ -128,8 +138,10 @@ if __name__ == "__main__":
         print(picture_path)
 
         # generate question
-        question_list = generate_question(caption) # return a list of questions
+        response_text = generate_question(caption) # return questions
+        question_list = align_to_list(response_text) # align questions to list
         answer_list = visual_question_answering(picture_path, question_list) # return a list of answers
-        statement_list = organize_question_answering(question_list, answer_list) # return a list of statements
+        response_text = organize_question_answering(question_list, answer_list) # return statements
+        statement_list = align_to_list(response_text) # align statements to list
         information_list = organize_information(statement_list) # return a list of information
         response = form_the_chain(information_list, history) # return a list of information
