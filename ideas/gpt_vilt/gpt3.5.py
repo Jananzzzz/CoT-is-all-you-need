@@ -71,8 +71,8 @@ for i in range(500):
 
         question_list = []
         for question in question_response.splitlines():
-            print(question[3:])
-            question_list.append(question[3:])
+            print(question)
+            question_list.append(question)
         print("")
 
         answer_list = []

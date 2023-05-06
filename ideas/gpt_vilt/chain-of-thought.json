@@ -554,5 +554,875 @@
             "She wears glasses.",
             "She is holding a baseball glove."
         ]
+    },
+    {
+        "image_id": 297273,
+        "caption": "People are eating at a restaurant in the outdoors. ",
+        "chain-of-thought": [
+            "The restaurant in the image is an Italian restaurant.",
+            "There are 20 people in the image.",
+            "It is a sunny day in the image.",
+            "The people in the image are eating pizza.",
+            "They are sitting at the restaurant.",
+            "The restaurant is located in a city.",
+            "The time of day in the image is afternoon.",
+            "The ambiance of the restaurant is happy.",
+            "There are no visible decorations in the image."
+        ]
+    },
+    {
+        "image_id": 326284,
+        "caption": "A boy in blue wetsuit on a boogie board.",
+        "chain-of-thought": [
+            "The boy is wearing a blue wetsuit.",
+            "The boy is on a boogie board, not a surfboard."
+        ]
+    },
+    {
+        "image_id": 102928,
+        "caption": "a young kid with overalls and a tie on ",
+        "chain-of-thought": [
+            "The young kid is wearing overalls and a tie as part of the occasion."
+        ]
+    },
+    {
+        "image_id": 242900,
+        "caption": "Little girl and a baby eating cake with their hands.",
+        "chain-of-thought": [
+            "They are eating cake.",
+            "They are not using utensils.",
+            "The cake is on a plate.",
+            "They are eating with their hands."
+        ]
+    },
+    {
+        "image_id": 216805,
+        "caption": "Two girls pose for a picture in front of a bench",
+        "chain-of-thought": [
+            "There are two girls in the picture.",
+            "The girls are posing for a picture in front of a bench. ",
+            "The attire of the young kid is casual.",
+            "The cake the girls are eating is birthday cake.",
+            "The expression on the faces of the people in the picture is happy."
+        ]
+    },
+    {
+        "image_id": 417220,
+        "caption": "A bedroom with books and makeup boxes are on a wooden floor.",
+        "chain-of-thought": [
+            "The wooden floor in the bedroom has a smooth finish.",
+            "There is no bed in the bedroom.",
+            "The style of the room decor is modern.",
+            "The color of the bedding in the bedroom is pink.",
+            "There is a mirror in the bedroom."
+        ]
+    },
+    {
+        "image_id": 318445,
+        "caption": "A group of people are walking and carrying containers on their head and in their hand in a village. ",
+        "chain-of-thought": [
+            "The containers are being carried on their head and in their hand.",
+            "A group of people are doing the carrying.",
+            "The location is a village."
+        ]
+    },
+    {
+        "image_id": 67122,
+        "caption": "A big cat laying down in a chair on a porch.",
+        "chain-of-thought": [
+            "The cat is laying down.",
+            "The cat is in a chair.",
+            "The cat is big."
+        ]
+    },
+    {
+        "image_id": 227035,
+        "caption": "A stack of different books with a teddy bear and bottle on top.",
+        "chain-of-thought": [
+            " The object on top of the stack of books is a teddy bear.",
+            " The color of the teddy bear on top of the stack of books is brown.",
+            " The different titles of the books suggest that the owner has diverse reading interests.",
+            " The bottle on top of the books is full."
+        ]
+    },
+    {
+        "image_id": 512187,
+        "caption": "A pizza rests inside an open pizza box.  ",
+        "chain-of-thought": [
+            "The answer to question 10 confirms that there is indeed pizza inside the open pizza box mentioned in the final result."
+        ]
+    },
+    {
+        "image_id": 424837,
+        "caption": "A child walking past a giant teddy bear that is sitting in a chair.",
+        "chain-of-thought": [
+            " The giant teddy bear is sitting in a chair.",
+            " A child is walking past the giant teddy bear."
+        ]
+    },
+    {
+        "image_id": 236425,
+        "caption": "A photo of a glass of wine an apple and a banana ",
+        "chain-of-thought": [
+            "There is a glass of wine in the photo.",
+            "In addition to the glass of wine, there is an apple and a banana in the photo."
+        ]
+    },
+    {
+        "image_id": 88514,
+        "caption": "A woman holding up toothbrushes next to her face in a store.",
+        "chain-of-thought": [
+            "The woman is holding up toothbrushes",
+            "She is holding up two toothbrushes",
+            "The woman is in a store",
+            "The store is not specified whether it's a grocery store or a pharmacy."
+        ]
+    },
+    {
+        "image_id": 368731,
+        "caption": "Two colorful birds are sitting on fence posts.",
+        "chain-of-thought": [
+            "The birds sitting on the fence posts are parrots.",
+            "The two birds on the fence posts are red in color."
+        ]
+    },
+    {
+        "image_id": 237309,
+        "caption": "A double high bus that is sitting in the street.",
+        "chain-of-thought": [
+            "The mentioned bus is a double-decker bus.",
+            "The double-decker bus is sitting in the street. ",
+            "The main difference between a double-decker bus and a regular bus is the former having two levels."
+        ]
+    },
+    {
+        "image_id": 261073,
+        "caption": "A white refrigerator that has magnets all over it",
+        "chain-of-thought": [
+            "The final result is a white refrigerator.",
+            "The refrigerator has magnets all over it."
+        ]
+    },
+    {
+        "image_id": 303392,
+        "caption": "a coach and a table in a home living room",
+        "chain-of-thought": [
+            "Final result: a coach and a table in a home living room."
+        ]
+    },
+    {
+        "image_id": 160166,
+        "caption": "The man is eating a hot dog at the table.",
+        "chain-of-thought": [
+            "he final result is about a man eating a hot dog at a table."
+        ]
+    },
+    {
+        "image_id": 218646,
+        "caption": "Four cows are relaxing in the sun near the mountains. ",
+        "chain-of-thought": [
+            "Four cows are present",
+            "The cows are resting",
+            "The cows are near mountains",
+            "The weather is sunny"
+        ]
+    },
+    {
+        "image_id": 327157,
+        "caption": "Wallpapered bedroom with purple comforter and vanity in the corner.",
+        "chain-of-thought": [
+            "The comforter in the bedroom is purple.",
+            "The vanity is located in the corner of the bedroom.",
+            "Floral wallpaper is used in the bedroom."
+        ]
+    },
+    {
+        "image_id": 182469,
+        "caption": "A black and white photo of a stop sign and a bridge in the background.",
+        "chain-of-thought": [
+            "The stop sign in the photo is gray in color.",
+            "A train bridge is visible in the background of the photo.",
+            "The photo is black and white."
+        ]
+    },
+    {
+        "image_id": 83364,
+        "caption": "Street view with cars going by and people walking around,",
+        "chain-of-thought": [
+            "The image is a street view.",
+            "There are cars passing by in the street.",
+            "People can be seen walking around in the photo."
+        ]
+    },
+    {
+        "image_id": 392352,
+        "caption": "a mirror is reflecting a man standing next to a truck",
+        "chain-of-thought": [
+            "The man standing next to the truck is wearing a hat.",
+            "The truck in the picture is parked.",
+            "The color of the truck the man is standing next to is white.",
+            "The man is standing on the driver side of the truck.",
+            "There is something unusual in the reflection captured in the mirror.",
+            "There are no other people in the picture besides the man.",
+            "The make of the mirror reflecting the man and the truck is circle.",
+            "Based on the lighting, it appears to be evening."
+        ]
+    },
+    {
+        "image_id": 57535,
+        "caption": "there is a skier riding on the snow",
+        "chain-of-thought": [
+            "The skier is riding",
+            "The skier is on snow"
+        ]
+    },
+    {
+        "image_id": 246070,
+        "caption": "A cake in the shape of a video game controller.",
+        "chain-of-thought": [
+            "The controller represents a Wii video game.",
+            "The occasion for the cake is a birthday.",
+            "The colors of the cake are brown.",
+            "The cake is small in size."
+        ]
+    },
+    {
+        "image_id": 447885,
+        "caption": "A black cat is sitting in the bathroom sink",
+        "chain-of-thought": [
+            "The cat is black in color.",
+            "The cat is sitting in the sink."
+        ]
+    },
+    {
+        "image_id": 87761,
+        "caption": "A toilet sits next to a hole in the wall with exposed wires. ",
+        "chain-of-thought": [
+            "The final result is an image of a toilet next to a hole in the wall.",
+            "The hole in the wall has exposed wires."
+        ]
+    },
+    {
+        "image_id": 538155,
+        "caption": "Chicken cooked with tomatoes and capers with a side of rice and broccoli.",
+        "chain-of-thought": [
+            "The main dish in the image is chicken cooked with tomatoes and capers.",
+            "The dish is served with a side of rice.",
+            "The vegetable shown in the image is broccoli.",
+            "Rice is one of the primary ingredients in the dish."
+        ]
+    },
+    {
+        "image_id": 220782,
+        "caption": "A truck driving across a bridge with steel bins in the background.",
+        "chain-of-thought": [
+            "The image features a truck.",
+            "Steel bins are visible in the background of the image."
+        ]
+    },
+    {
+        "image_id": 67569,
+        "caption": "A plane equipped for water landing sits on a runway.",
+        "chain-of-thought": [
+            "The plane is equipped for water landing.",
+            "The plane is sitting on a runway."
+        ]
+    },
+    {
+        "image_id": 294890,
+        "caption": "Two cats stand next to each other near a window.",
+        "chain-of-thought": [
+            "The cats are present in the image.",
+            "The cats in the image don't appear to be friendly towards each other.",
+            "There is a window present in the image, located outside.",
+            "The cats in the image are standing on a surface, not in mid-air."
+        ]
+    },
+    {
+        "image_id": 382101,
+        "caption": "Two women are playing a video game in a room with a couch.",
+        "chain-of-thought": [
+            "The setting of the scene is inside a room with a couch.",
+            "There are two women present in the room.",
+            "The activity being done by the two women is playing a video game."
+        ]
+    },
+    {
+        "image_id": 517522,
+        "caption": "a man running on a tennis court with a rackett in his hand",
+        "chain-of-thought": [
+            "The man running on a tennis court with a racket in his hand. ",
+            "",
+            "educed from all four pieces of information)"
+        ]
+    },
+    {
+        "image_id": 450151,
+        "caption": "A bench in the park on a rainy day.",
+        "chain-of-thought": [
+            "The final result is a bench.",
+            "The location of the bench is in a park.",
+            "The weather is rainy."
+        ]
+    },
+    {
+        "image_id": 49443,
+        "caption": "A giraffe standing next to a tree eating it's leaves.",
+        "chain-of-thought": [
+            "The animal in the final result is a giraffe.",
+            "The giraffe is standing next to a tree.",
+            "The giraffe is eating the leaves of the tree."
+        ]
+    },
+    {
+        "image_id": 568982,
+        "caption": "A black computer keyboard, mouse and mouse pad on a desk.",
+        "chain-of-thought": [
+            "The final result is a desk setup with a black computer keyboard, mouse, and mouse pad."
+        ]
+    },
+    {
+        "image_id": 187036,
+        "caption": "An old masted couple of boats are docked.",
+        "chain-of-thought": [
+            "The boats are described as old. ",
+            "The final result involves a couple of boats that are docked."
+        ]
+    },
+    {
+        "image_id": 265179,
+        "caption": "Display of a banana and orange on white table.",
+        "chain-of-thought": [
+            "There is a display.",
+            "The display is of a banana and an orange.",
+            "The table is white."
+        ]
+    },
+    {
+        "image_id": 32095,
+        "caption": "A man is enjoying a slice of pizza at a buffet table.",
+        "chain-of-thought": [
+            "The man is eating pizza at the buffet table.",
+            "Pizza is one of the foods available on the buffet table.",
+            "The man is smiling while eating his pizza.",
+            "The man is sitting at the buffet table."
+        ]
+    },
+    {
+        "image_id": 287967,
+        "caption": "a traffic light at an intersection a dusk ",
+        "chain-of-thought": [
+            "The scene involves a traffic light at an intersection.",
+            "The setting is at dusk."
+        ]
+    },
+    {
+        "image_id": 205845,
+        "caption": "A group of men sit on motor bikes.",
+        "chain-of-thought": [
+            "The men are sitting on motorcycles.",
+            "The men are wearing helmets."
+        ]
+    },
+    {
+        "image_id": 379488,
+        "caption": "A person on a surf board riding a wave.",
+        "chain-of-thought": [
+            "The person is a surfer.",
+            "They are wearing shorts while surfing.",
+            "The size of the wave is small.",
+            "The surf board being used is white."
+        ]
+    },
+    {
+        "image_id": 506802,
+        "caption": "A crowd of people standing around a store.",
+        "chain-of-thought": [
+            "There is likely a store in the image.",
+            "The store is surrounded by a crowd of people."
+        ]
+    },
+    {
+        "image_id": 387597,
+        "caption": "A horse jumping competition is going on with people in the stands.",
+        "chain-of-thought": [
+            "People are present in the stands watching the horse competition."
+        ]
+    },
+    {
+        "image_id": 411505,
+        "caption": "A person standing on the street with one foot on a skateboard",
+        "chain-of-thought": [
+            "The caption: \"A person standing on the street with one foot on a skateboard\"."
+        ]
+    },
+    {
+        "image_id": 535617,
+        "caption": "A woma. riding a wave standing while another woman riding a wave while laying on a surfboard.",
+        "chain-of-thought": [
+            "The final result involves two women surfing on waves.",
+            "One woman is standing on the wave while the other is lying on a surfboard."
+        ]
+    },
+    {
+        "image_id": 543531,
+        "caption": "Four soldiers celebrate someone's birthday with a cake.",
+        "chain-of-thought": [
+            "A man is holding the knife to cut the cake.",
+            "The flavor of the cake is chocolate.",
+            "The color of the cake is brown."
+        ]
+    },
+    {
+        "image_id": 118167,
+        "caption": "a young person wearing a shirt and tie",
+        "chain-of-thought": [
+            "The young person is wearing a formal attire. ",
+            "The gender of the young person is not specified. ",
+            "The age range of the young person is not specified. ",
+            "The context or setting in which the young person is located is not specified."
+        ]
+    },
+    {
+        "image_id": 235788,
+        "caption": "a van parked in a field near other cars ",
+        "chain-of-thought": [
+            "The van is parked in a field",
+            "There are other cars nearby."
+        ]
+    },
+    {
+        "image_id": 418882,
+        "caption": "A stove top has many different items cooking on it",
+        "chain-of-thought": [
+            "The stove top has many different items cooking on it."
+        ]
+    },
+    {
+        "image_id": 243910,
+        "caption": "a couple of food products piled on each other ",
+        "chain-of-thought": [
+            "The food products are piled on each other.",
+            "There are multiple food products involved."
+        ]
+    },
+    {
+        "image_id": 432397,
+        "caption": "A black and white photograph of a plane with many admirers.",
+        "chain-of-thought": [
+            "The photograph is in black and white.",
+            "The photograph features a plane with many admirers.",
+            "The plane is a Cessna.",
+            "The plane is on the ground.",
+            "The photograph was taken in the 1950s.",
+            "The pilot is among the admirers of the plane."
+        ]
+    },
+    {
+        "image_id": 443522,
+        "caption": "A plate filled with french toast and fresh fruit.",
+        "chain-of-thought": [
+            "The fruit on the plate includes grapes and raspberries.",
+            "There is only one slice of French toast on the plate."
+        ]
+    },
+    {
+        "image_id": 1397,
+        "caption": "A man is riding on a surfboard in the ocean.",
+        "chain-of-thought": [
+            "The man is riding on a surfboard in the ocean. ",
+            "The man is wearing something while he is surfing. ",
+            "The surfboard is colored. ",
+            "The waves in the background are visible. ",
+            "The waves in the background are not very large."
+        ]
+    },
+    {
+        "image_id": 333551,
+        "caption": "A picture of a great room that included a kitchen, dining room and living area.",
+        "chain-of-thought": [
+            "The final result is a picture of a great room.",
+            "The great room includes a kitchen, dining room and living area."
+        ]
+    },
+    {
+        "image_id": 30931,
+        "caption": "This is a picture of a white refrigerator with several magnets on the doors. ",
+        "chain-of-thought": [
+            "The refrigerator in the picture is white.",
+            "The magnets on the refrigerator doors are square in shape.",
+            "The brand of the refrigerator is GE.",
+            "The refrigerator has two doors.",
+            "The only items seen inside the refrigerator in the picture are magnets."
+        ]
+    },
+    {
+        "image_id": 533477,
+        "caption": "A young boy watches a TV show in the living room.",
+        "chain-of-thought": [
+            "The boy is watching a TV show in the living room.",
+            "The boy is watching a cartoon on TV in the living room.",
+            "The living room is not brightly lit.",
+            "The boy is wearing a shirt while watching TV.",
+            "There is no one else present in the living room with the boy."
+        ]
+    },
+    {
+        "image_id": 532200,
+        "caption": "Four people flying a kite in a blue sky.",
+        "chain-of-thought": [
+            "The sky in the image is blue.",
+            "Four people are flying a kite in the picture.",
+            "The activity of the people in the picture is kite flying."
+        ]
+    },
+    {
+        "image_id": 533944,
+        "caption": "A man standing on top of a base holding a catchers mitt.",
+        "chain-of-thought": [
+            "The man is standing on top of a base holding a catchers mitt."
+        ]
+    },
+    {
+        "image_id": 50521,
+        "caption": "A bathroom with a handicapped toilet stool next to a tub",
+        "chain-of-thought": [
+            "The final result is related to a bathroom.",
+            "The bathroom features a handicapped toilet stool.",
+            "The toilet stool is located next to a tub."
+        ]
+    },
+    {
+        "image_id": 228478,
+        "caption": "A plate of fruit and muffins sitting on a table ",
+        "chain-of-thought": [
+            "The plate on the table contains blueberry muffins.",
+            "There is also a plate of fruit on the table.",
+            "The fruit plate contains at least one type of fruit. ",
+            "",
+            "tput: ",
+            "A plate of fruit and muffins sitting on a table"
+        ]
+    },
+    {
+        "image_id": 512451,
+        "caption": "A man folding a giant paper airplane on the floor.",
+        "chain-of-thought": [
+            "The man is folding",
+            "The paper airplane is giant in size"
+        ]
+    },
+    {
+        "image_id": 319057,
+        "caption": "A lounge chair sits under a tent with a laptop in front of it. ",
+        "chain-of-thought": [
+            "A lounge chair sits under a tent with a laptop in front of it. ",
+            "",
+            "ll 3 pieces of information are necessary to deduce the caption.)"
+        ]
+    },
+    {
+        "image_id": 486079,
+        "caption": "young man with long hair and a surfboard walking on the beach",
+        "chain-of-thought": [
+            "The subject has a surfboard. ",
+            "",
+            "tput: ",
+            "young man ",
+            "long hair ",
+            "walking ",
+            "beach ",
+            "surfboard",
+            "waves"
+        ]
+    },
+    {
+        "image_id": 556149,
+        "caption": "Four people standing at a skate on bikes and skateboards.",
+        "chain-of-thought": [
+            "Four friends enjoying a day out at the skate park.",
+            "A group of teenagers practicing tricks on their bikes and skateboards at the local skate park.",
+            "A photo of four people posing with their bikes and skateboards at the skate park.",
+            "Four riders taking a break and chatting at the skate park.",
+            "A video featuring four skilled riders displaying their talents on bikes and skateboards at the skate park."
+        ]
+    },
+    {
+        "image_id": 150533,
+        "caption": "A skier coming over the crest of a hill while holding ski poles and wearing a helmet and goggles",
+        "chain-of-thought": [
+            "The person in the final result is a skier.",
+            "The skier is wearing a helmet and goggles.",
+            "The skier is holding ski poles.",
+            "The skier is coming over the crest of a hill."
+        ]
+    },
+    {
+        "image_id": 423341,
+        "caption": "a man in street riding his bicycle ",
+        "chain-of-thought": [
+            "The person in the final result is a man.",
+            "He is riding a bicycle.",
+            "The man is on the street."
+        ]
+    },
+    {
+        "image_id": 157385,
+        "caption": "A herd of zebra standing on a lush green field.",
+        "chain-of-thought": [
+            "The scene takes place on a lush green field.",
+            "There are several zebras standing in a herd."
+        ]
+    },
+    {
+        "image_id": 262869,
+        "caption": "A person standing in the snow, holding a snowboard and holding his thumb up.",
+        "chain-of-thought": [
+            "The person in the picture is holding a snowboard.",
+            "The person is standing in the snow.",
+            "The person is holding their thumb up."
+        ]
+    },
+    {
+        "image_id": 329175,
+        "caption": "A guy is skateboarding up an embankment near a street.",
+        "chain-of-thought": [
+            "The person in the final result is male.",
+            "The person is skateboarding.",
+            "The person is moving up an embankment.",
+            "The embankment is located near a street."
+        ]
+    },
+    {
+        "image_id": 430259,
+        "caption": "The man is standing on the sidewalk, talking on his phone with a small umbrella. ",
+        "chain-of-thought": [
+            "The man is standing on the sidewalk",
+            "He is talking on his phone",
+            "The man is holding a small umbrella."
+        ]
+    },
+    {
+        "image_id": 464616,
+        "caption": "A very big pretty elephant in the woods.",
+        "chain-of-thought": [
+            "There is a pretty elephant in the woods.",
+            "The elephant is very big in size."
+        ]
+    },
+    {
+        "image_id": 270275,
+        "caption": "A man jumping in the air with a frisbee in his hand.",
+        "chain-of-thought": [
+            "The person performing the action is a man.",
+            "The man is jumping in the air.",
+            "The man has a frisbee in his hand."
+        ]
+    },
+    {
+        "image_id": 217436,
+        "caption": "A grey long haired cat standing over a toilet. ",
+        "chain-of-thought": [
+            "The final result features a grey, long-haired cat.",
+            "The cat is standing over a toilet."
+        ]
+    },
+    {
+        "image_id": 405964,
+        "caption": "some skiers oin the lift about to shred the gnar",
+        "chain-of-thought": [
+            "The skiers are currently on a ski lift.",
+            "The skiers are excited to go skiing."
+        ]
+    },
+    {
+        "image_id": 79606,
+        "caption": "a child with a bunch of bananas in a body of water",
+        "chain-of-thought": [
+            "The image involves a child",
+            "The child is holding a bunch of bananas",
+            "The image is set in a body of water"
+        ]
+    },
+    {
+        "image_id": 331759,
+        "caption": "Several chefs work busily in a crowded kitchen. ",
+        "chain-of-thought": [
+            "The setting is a crowded kitchen.",
+            "The individuals in the kitchen are chefs.",
+            "The chefs are busy at work."
+        ]
+    },
+    {
+        "image_id": 178939,
+        "caption": "A dog rests on dirty tiles between near a bike and metal doors.",
+        "chain-of-thought": [
+            "The dog is laying down.",
+            "The tiles around the dog are dirty.",
+            "There are bikes near the dog.",
+            "The doors nearby are made of metal."
+        ]
+    },
+    {
+        "image_id": 403224,
+        "caption": "A women who is on a snowboard in the snow.",
+        "chain-of-thought": [
+            "The person in the image is a woman.",
+            "She is snowboarding.",
+            "She is wearing a snowboard on her feet.",
+            "The ground in the image has a snow texture.",
+            "The equipment she is using is a snowboard."
+        ]
+    },
+    {
+        "image_id": 534048,
+        "caption": "A man laying on a bed with several computers in the room.",
+        "chain-of-thought": [
+            "The man is laying on a bed with several computers in the room.",
+            "The computers in the room are laptops."
+        ]
+    },
+    {
+        "image_id": 464430,
+        "caption": "A group of people playing tennis on a sunny day.",
+        "chain-of-thought": [
+            "The game being played in the image is tennis.",
+            "The weather condition while playing tennis is sunny.",
+            "The picture was taken on a tennis court."
+        ]
+    },
+    {
+        "image_id": 148358,
+        "caption": "Three zebras eating grass in a grassy field. ",
+        "chain-of-thought": [
+            "There are three zebras in the picture.",
+            "The zebras are eating grass.",
+            "The zebras are black and white in color.",
+            "The size of the field the zebras are in can be estimated based on the picture."
+        ]
+    },
+    {
+        "image_id": 53670,
+        "caption": "Baseball batter watches the ball as he's about to swing the bat",
+        "chain-of-thought": [
+            "The baseball player is swinging a bat.",
+            "The baseball player is watching the ball."
+        ]
+    },
+    {
+        "image_id": 317861,
+        "caption": "A jet plane flies overhead in a clear sky. ",
+        "chain-of-thought": [
+            "The jet plane flies overhead in a clear sky."
+        ]
+    },
+    {
+        "image_id": 21900,
+        "caption": "A man riding on the back of a white horse.",
+        "chain-of-thought": [
+            "The horse being ridden by the man is white.",
+            "The man is riding on the back of the horse.",
+            "The horse is moving."
+        ]
+    },
+    {
+        "image_id": 120412,
+        "caption": "A grey car is turned right at a stop light and a hazard sign was in his lane.",
+        "chain-of-thought": [
+            "The car turned right at a stop light.",
+            "The car was grey.",
+            "A hazard sign was present in the lane of the grey car."
+        ]
+    },
+    {
+        "image_id": 125909,
+        "caption": "a bunch of people are eating around a table",
+        "chain-of-thought": [
+            "There is a group of people present",
+            "They are sitting around a table",
+            "They are all eating together"
+        ]
+    },
+    {
+        "image_id": 486941,
+        "caption": "Church like building with four clocks located on the sides of it's roof tower",
+        "chain-of-thought": [
+            "The building is a church or resembles a church",
+            "It has a tower with clocks on the sides",
+            "The clocks show 1:55"
+        ]
+    },
+    {
+        "image_id": 137547,
+        "caption": "A group of remotes sit next to a big packaged universal remote.",
+        "chain-of-thought": [
+            "The dimensions of the universal remote control and the other remotes in the picture are related to TV.",
+            "There are multiple remotes in the picture, including a big packaged universal remote.",
+            "All of the remotes in the picture are designed for the same type of device or control different devices.",
+            "The purpose of having multiple remotes is related to TV."
+        ]
+    },
+    {
+        "image_id": 279621,
+        "caption": "a yellow and black train is coming down the tracks",
+        "chain-of-thought": [
+            "The train coming down the tracks is yellow in color.",
+            "The location of the train is on the tracks."
+        ]
+    },
+    {
+        "image_id": 240802,
+        "caption": "A street and a street sign on the corner of the street which reads, \"Main St.\"",
+        "chain-of-thought": [
+            "The street sign on the corner reads \"Main St.\""
+        ]
+    },
+    {
+        "image_id": 439402,
+        "caption": "Two young men playing a game involving a disc on grass.",
+        "chain-of-thought": [
+            "They are playing with a frisbee.",
+            "The game is being played on grass.",
+            "The object they are throwing is a frisbee.",
+            "The age group of the men playing is young."
+        ]
+    },
+    {
+        "image_id": 41796,
+        "caption": "two lady's on a boat in the water one holding an umbrella ",
+        "chain-of-thought": [
+            "There are two women on a boat in the water",
+            "One of the women is holding an umbrella."
+        ]
+    },
+    {
+        "image_id": 464298,
+        "caption": "A woman standing on tippy toes holding a suitcase.",
+        "chain-of-thought": [
+            "The woman is shorter than the suitcase.",
+            "The woman is holding the suitcase in her right hand.",
+            "The woman is standing on tippy toes because of a possible wedding occasion.",
+            "The background or surroundings of the woman and suitcase is a wall."
+        ]
+    },
+    {
+        "image_id": 67580,
+        "caption": "A street scene with a semi truck pulling a boat.",
+        "chain-of-thought": [
+            "The make of the semi truck is Ford.",
+            "The color of the boat being towed is white.",
+            "The boat is being towed with a trailer.",
+            "The semi truck is not pulling any other vehicles or objects besides the boat."
+        ]
+    },
+    {
+        "image_id": 422611,
+        "caption": "A plate full of food sitting on a table with other items and cash. ",
+        "chain-of-thought": [
+            "The food on the plate is breakfast.",
+            "There is cash on the table.",
+            "The currency of the cash present on the table is American.",
+            "The plate of food is served at a restaurant."
+        ]
     }
 ]
