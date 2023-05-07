@@ -1,5 +1,6 @@
 from transformers import AutoTokenizer, AutoModel
 from pycocotools.coco import COCO
+import re
 import json
 import time
 import random
@@ -7,11 +8,16 @@ import torch
 from transformers import ViltProcessor, ViltForQuestionAnswering
 from PIL import Image
 
-def visual_question_answering(image_path, question):
+def contain_chinese(text):
+    pattern = re.compile(r'[\u4e00-\u9fff]')  # Unicode range for Chinese characters
+    return bool(re.search(pattern, text))
+
+def visual_question_answering(image_path, question_list):
     # prepare image + question
     # image = Image.open("D:/CoT-is-all-you-need/data/coco2017/train2017/000000458752.jpg")
     image = Image.open(image_path)
-    question = question
+    question_list = question_list
+    answer_list = []
 
     processor = ViltProcessor.from_pretrained("dandelin/vilt-b32-finetuned-vqa")
     vqa_model = ViltForQuestionAnswering.from_pretrained("dandelin/vilt-b32-finetuned-vqa")
@@ -22,15 +28,18 @@ def visual_question_answering(image_path, question):
 
     # move model and inputs to GPU
     vqa_model.to(device)
-    encoding = processor(image, question, return_tensors="pt").to(device)
 
-    # forward pass
-    with torch.no_grad():
-        outputs = vqa_model(**encoding)
-        logits = outputs.logits
-        idx = logits.argmax(-1).item()
-        return vqa_model.config.id2label[idx]
+    for question in question_list:
+        encoding = processor(image, question, return_tensors="pt").to(device)
 
+        # forward pass
+        with torch.no_grad():
+            outputs = vqa_model(**encoding)
+            logits = outputs.logits
+            idx = logits.argmax(-1).item()
+            answer_list.append(vqa_model.config.id2label[idx])
+
+    return answer_list
 
 def generate_question(caption):
     prompt = f"""
@@ -95,7 +104,8 @@ Your output is the aligned list of sentences."""
 def translate_to_english(response_text):
     prompt = f"""Below is a output of a langauage model:
 {response_text}
-It may contain some Chinese characters. Please translate the Chinese characters to English."""
+It may contain some Chinese characters. Please translate the Chinese characters to English.
+Your output will be the tranlated version."""
     response, history = model.chat(tokenizer, prompt, history=[])
     return response
 
@@ -131,6 +141,8 @@ if __name__ == "__main__":
     # generate chain of thought
     for i in range(500):
 
+        Start_time = time.time()
+
         item = data[random.randint(0, len(data))]
 
         image_id = item['image_id']
@@ -141,18 +153,88 @@ if __name__ == "__main__":
         # caption = "a baseball pitcher winds up to pitch the ball."
         # picture_path = "D:/CoT-is-all-you-need/data/coco2017/train2017/000000458752.jpg"
 
-        print(caption)
+        print(f"Image {i}", caption)
         print(picture_path)
 
-        # generate question
+        # generate questions
+        start_time = time.time()
         response_text = generate_question(caption) # return questions
-        question_list = align_to_list(response_text) # align questions to list
+        print(response_text)
+        end_time = time.time()
+        print(f"Generate questions consumed : {end_time - start_time} seconds.")
+        print("")
+
+        # align questions to list
+        start_time = time.time()
+        response_text = align_to_list(response_text) # align questions to list
+        print(response_text)
+        question_list = []
+        for line in response_text.split('\n'):
+            if line:
+                question_list.append(line)
+        end_time = time.time()
+        print(f"Align questions consumed : {end_time - start_time} seconds.")
+        print("")
+
+        # answer questions
+        start_time = time.time()
         answer_list = visual_question_answering(picture_path, question_list) # return a list of answers
+        for i in range(len(question_list)):
+            print(question_list[i], answer_list[i])
+        end_time = time.time()
+        print(f"Answer questions consumed : {end_time - start_time} seconds.")
+        print("")
+
+        # organize question answering
+        start_time = time.time()
         response_text = organize_question_answering(question_list, answer_list) # return statements
-        statement_list = align_to_list(response_text) # align statements to list
-        information_list = organize_information(statement_list) # return a list of information
+        print(response_text)
+        end_time = time.time()
+        print(f"Organize question answering consumed : {end_time - start_time} seconds.")
+        print("")
+
+        # align statements to list
+        start_time = time.time()
+        response_text = align_to_list(response_text) # align statements to list
+        print(response_text)
+        statement_list = []
+        for line in response_text.split('\n'):
+            if line:
+                statement_list.append(line)
+        end_time = time.time()
+        print(f"Align statements consumed : {end_time - start_time} seconds.")  
+        print("")
+
+        # extract useful information_list
+        start_time = time.time()
+        response_text = organize_information(statement_list) # return a list of information
+        print(response_text)
+        information_list = []
+        for line in response_text.split('\n'):
+            if line:
+                information_list.append(line)
+        end_time = time.time()
+        print(f"Extract useful information consumed : {end_time - start_time} seconds.")
+        print("")
+
+        # form the chain
+        start_time = time.time() 
         chain_of_thought = form_the_chain(information_list, history) # return chain of thought
-        result = translate_to_english(chain_of_thought) # final result
+        print(chain_of_thought)
+        end_time = time.time()
+        print(f"Form the chain consumed : {end_time - start_time} seconds.")
+        print("")
+
+        # check whether contain chinese character
+        if contain_chinese(chain_of_thought):
+            print("Contain chinese character, translate to english.")
+            result = translate_to_english(chain_of_thought) # final result
+        else:
+            result = chain_of_thought # final result
+
+        # print final result
+        print(result)
+        print("")
 
         with open('D:/CoT-is-all-you-need/ideas/gpt_vilt/chain-of-thought.json', 'r+') as f:
             thoughts = json.load(f)
@@ -165,3 +247,7 @@ if __name__ == "__main__":
             f.seek(0)
             json.dump(thoughts, f, indent=4)
             f.truncate() 
+        
+        End_time = time.time()
+        print(f"Total image&Caption {i} processing consumed : {End_time - Start_time} seconds.")
+        print("")
