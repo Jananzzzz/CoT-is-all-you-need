@@ -1,5 +1,7 @@
 /data
-/ideas/bert/bert
-/ideas/bert/models
-/ideas/gpt_vilt/__pycache__
-/ideas/openai/gpt
+/generate_CoT/bert/bert
+/generate_CoT/bert/models
+/generate_CoT/gpt_vilt/__pycache__
+/generate_CoT/openai/gpt
+
+**/__pycache__/
