@@ -3,5 +3,6 @@
 /generate_CoT/bert/models
 /generate_CoT/gpt_vilt/__pycache__
 /generate_CoT/openai/gpt
+/test/
 
 **/__pycache__/
