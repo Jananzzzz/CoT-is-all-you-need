@@ -8,6 +8,10 @@
 
 2. Analyze and evaluate the dataset
     1. overview
+        - sample density
+            - What are the characteristics? Number? Entity type?
+            - What is the target characteristics?
+        - stability of eigenvalue
     2. chain-of-thought to caption matching
         - organize(reason) chain-of-thought to caption
         - entity, events matching
