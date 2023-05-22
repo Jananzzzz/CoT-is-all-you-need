@@ -6,3 +6,5 @@
 /test/
 
 **/__pycache__/
+
+chain-of-thought/data/images/
