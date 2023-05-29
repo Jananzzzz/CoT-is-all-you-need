@@ -16,6 +16,7 @@ for i in data:
     total += 1
     if len(i["chain-of-thought"]) < 5:
         bad_data += 1
+        print(i["image_id"])
     if i["image_id"] not in image_list:
         image_list.append(i["image_id"])
     if i["caption"] not in caption_list:
