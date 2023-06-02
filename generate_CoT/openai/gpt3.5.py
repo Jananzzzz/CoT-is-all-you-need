@@ -1,6 +1,7 @@
 import openai
+import config
 
-openai.api_key = "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"
+openai.api_key = config.openai_api
 
 question_generate_message = [
     {

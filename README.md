@@ -1,10 +1,7 @@
 # Chain of thought is all you need
 
-Welcome to "Chain of thought is all you need" - a project of multi-model dataset reinforcement and pre-training of large-scale multimodal reasoning.
+A project of multi-model dataset reinforcement and pre-training of large-scale multimodal reasoning.
 
-## Project Overview
-
-The "Chain of thought is all you need" project is built using advanced natural language processing algorithms and AI techniques to provide users with a challenging and rewarding experience. It includes a series of SOTA AI models and algorithms.
 
 **Motivation**: 
 
@@ -13,27 +10,16 @@ The "Chain of thought is all you need" project is built using advanced natural l
 - Promoting technological innovation: by constructing new datasets, developing new pre-training objectives, loss functions and other methods, new research directions and technological breakthroughs can be brought to the fields of computer vision and natural language processing.
 - Improving the interpretability of artificial intelligence: by improving the reasoning ability of the model, it enables artificial intelligence systems to generate more reasonable and consistent explanations when dealing with complex tasks, thereby improving their interpretability.
 
-## How to Use the Project
-
-To use this project, simply follow these steps:
-
-1. Clone the repository to your local machine.
-2. Install any necessary dependencies.
-3. Run the code to start the game.
-4. Use the reinforced datasets
-
-Or, just [download](https://www.google.com) the already-reinforced datasets.
-
 [PaperList](https://docs.qq.com/sheet/DQ0FmVURmYmFIVmtV?scene=b38db4adca404be50932e954FZWrp1&tab=BB08J2)
 
 ## Contribution
+
+![Downloads](https://github.com/Jananzzzz/CoT-is-all-you-need/files/11635889/chain-of-thought.zip)
 
 - Build a dataset that includes visual reasoning with causal chains to provide valuable resources for relevant research. 
 - Adjust the pre-training objectives during representation learning to enable the model to handle reasoning tasks. 
 - Optimize model performance by introducing strategies such as multi-task loss functions and additional loss functions. 
 - Propose an approach to evaluate the rationality and consistency of generated text in causal chains.
-
-## Technologies Used
 
 ### Dataset
 
